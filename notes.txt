@@ -1,0 +1,6 @@
+document.getElementById("score") 
+
+jQuery - write less, do more 
+    $("#score")
+    dollar sign, selector, actions!!!!! 
+    
