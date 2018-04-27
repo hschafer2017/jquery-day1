@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="lights.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <button onClick="lightOn()" id="switchOn" class="offSwitch">
+        <img src = "switch_on_1024.png" height="200px">
+    </button>
+    <img src="bulboff.gif" id="bulbImage" width="100">
+    <button onClick="lightOff()" id="switchOff">Turn off the light!</button>
+    
+    <button onClick="lightSecondOn()" id="switchOn2">
+        <img class="secondSwitch" src = "switch_on_1024.png" height="200px">
+    </button>
+    <img src="bulboff.gif" id="secondBulb" width="100">
+    <button onClick="lightSecondOff()" id="switchOff2">Turn off the light!</button>
+    
+    <button onClick="lightThirdOn()" id= "switchOn3">
+        <img class = "thirdBulb" src = "switch_on_1024.png" height="200px">
+    </button>
+    <img src="bulboff.gif" id="thirdBulb" width="100">
+    <button onClick="lightThirdOff()" id="switchOff3">Turn off the light!</button>
+    
+     <script> 
+        function lightOn() {
+        $("#switchOn").click(function() {
+            $("#bulbImage").attr("src", "bulbon.gif");
+            $("").attr("src", "switch_on_1024.png");
+            
+        })
+    }
+    function lightOff() {
+        
+        $("#switchOff").click(function() {
+            $("#bulbImage").attr("src", "bulboff.gif");
+        
+    }) }
+    
+    function lightSecondOn() {
+        $("#switchOn2").click(function() {
+            $("#secondBulb").attr("src", "bulbon.gif");
+        })
+    }
+    function lightSecondOff() {
+        
+        $("#switchOff2").click(function() {
+            $("#secondBulb").attr("src", "bulboff.gif");
+    }) }
+    
+    function lightThirdOn() {
+        $("#switchOn3").click(function() {
+            $("#thirdBulb").attr("src", "bulbon.gif");
+        })
+    }
+    function lightThirdOff() {
+        
+        $("#switchOff3").click(function() {
+            $("#thirdBulb").attr("src", "bulboff.gif");
+    }) }
+    </script>
+    
+</body>
+</html>

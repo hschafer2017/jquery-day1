@@ -1,0 +1,21 @@
+$(document).ready(function(){
+    $("#button1").click(function(){
+        $("#para1").hide(200);
+    });
+    
+    $("#button2").click(function(){
+        $("#para2").hide(200);
+    });
+    $("#button3").click(function(){
+        $("#para3").hide(200);
+    });
+    $("#button4").click(function(){
+        $("#para4").hide(200);
+    });
+    $("#button5").click(function(){
+        $("#para5").hide(200);
+    });
+    $("#button6").click(function(){
+        $("#para6").hide(200);
+    });
+})
